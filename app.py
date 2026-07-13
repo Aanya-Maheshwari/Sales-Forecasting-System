@@ -41,8 +41,8 @@ if page == "Overview":
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("Historical vs Projected Sales Trends")
-    if os.path.exists('charts/task4_segment_forecast.png'):
-        st.image('charts/task4_segment_forecast.png', width='stretch')
+    if os.path.exists('task4_segment_forecast.png'):
+        st.image('task4_segment_forecast.png', width='stretch')
     else:
         st.info("Chart asset not found. Run Task 4 in your notebook to export.")
 
@@ -89,8 +89,8 @@ elif page == "Weekly Anomaly Logs":
     st.header("🚨 Supply Chain Anomaly Tracking")
     st.write("Historical outliers identified dynamically using multi-method tracking profiles.")
 
-    if os.path.exists('charts/task5_anomalies.png'):
-        st.image('charts/task5_anomalies.png', width='stretch')
+    if os.path.exists('task5_anomalies.png'):
+        st.image('task5_anomalies.png', width='stretch')
 
     st.markdown("<br>", unsafe_allow_html=True)
     st.subheader("📋 Dynamic System Outliers Registry")
@@ -112,8 +112,8 @@ elif page == "Product Demand Segments":
     col_plot, col_strategy = st.columns([1, 1])
     with col_plot:
         st.subheader("Spatial Cluster Chart")
-        if os.path.exists('charts/task6_clusters.png'):
-            st.image('charts/task6_clusters.png', width='stretch')
+        if os.path.exists('task6_clusters.png'):
+            st.image('task6_clusters.png', width='stretch')
         else:
             st.info("Run Task 6 cluster plot in your notebook to visualize.")
 
